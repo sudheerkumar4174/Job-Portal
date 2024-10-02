@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87dbca4dd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jobportalloginpage.css"/>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-md-6 loginContainer1 d-flex flex-column justify-content-center">
+                    <div class="fixed-top p-3">
+                        <h1 class="logoIcon">JOB HUNT
+                            <i class="fa-solid fa-briefcase "></i>
+                        </h1>
+                    </div>
+                    <div id="loginContainer" class="">
+                        <div class=" d-flex flex-row justify-content-center ">
+                            <form class="loginBox   shadow" id="myForm">
+                                <h1 class="loginHeading">Login</h1>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input id="email" class="form-control" type="text" />
+                                    <p id="emailErrorMsg"></p>
+                                </div>
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input id="password" class="form-control" type="password" />
+                                    <p id="passwordErrorMsg"></p>
+                                </div>
+                                <button id="submit" class="loginButton">Submit</button>
+                                <p id="loginResult" class="mt-1"></p>
+                                <p class='mt-4'>Dont have an account?
+                                    <button class="loginButton" id="signup">Signup</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="signinContainer" class="d-none">
+                        <div class="d-flex flex-row justify-content-center">
+                            <form class="loginBox pt-1  shadow" id="mySigninForm">
+                                <h1 class="loginHeading mt-0">Signin</h1>
+                                <div>
+                                    <label for="email1">Email</label>
+                                    <input id="email1" class="form-control" type="text" />
+                                    <p id="emailErrorMsg1"></p>
+                                </div>
+                                <div>
+                                    <label for="password1">Password</label>
+                                    <input id="password1" class="form-control" type="password" />
+                                    <p id="passwordErrorMsg1"></p>
+                                </div>
+
+                                <div>
+                                    <label for="confirmPassword1">Confirm Password</label>
+                                    <input id="confirmpassword1" class="form-control" type="password" />
+                                    <p id="confirmPasswordErrorMsg1"></p>
+                                </div>
+                                <p id="loginResult1" class="mt-1"></p>
+                                <button id="submit1" class=" loginButton">Submit</button>
+                                <button id="loginBack" class='loginButton'>Back</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 loginContainer2 d-flex flex-column justify-content-center">
+                    <h1 class="successHeading mt-3 mb-3"><span class="spec">Success Stories</span> from 1000s of Students Like You</h1>
+                    <div class="placedPersonsContainer p-2 d-flex flex-column justify-content-center">
+                        <marquee class="mt-2 mb-2">
+                            <div class="d-flex flex-row">
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </marquee>
+                        <marquee class="mt-2 mb-2" direction="right">
+                            <div class="d-flex flex-row">
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </marquee>
+                        <marquee class="mt-2 mb-2">
+                            <div class="d-flex flex-row">
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+
+                                <div class="personbox d-flex  flex-row mr-3">
+                                    <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png" class="w-25" />
+                                    <div class="w-75 p-2 pl-3">
+                                        <p class="mb-0 personName">Dinesh Kumar</p>
+                                        <p class="mt-0 mb-0 personRole">Software Analyst</p>
+                                        <p class="companyName">Infosys</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </marquee>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jobportalloginpage.js"></script>
+</body>
+
+</html>

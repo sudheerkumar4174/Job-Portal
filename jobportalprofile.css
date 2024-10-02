@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.userProfileHead {
+    color: #002a4b;
+    font-size: 20px;
+}
+.profilebut{
+    color:white;
+    background-color:#00294b;
+    border-width:0px;
+    border-radius:5px;
+    height:32px;
+    width:100px;
+}
+.contactusHeadingContainer {
+    background-color: #00294b;
+    text-align: center;
+    color: white;
+    height: 15vh;
+}
+
+.subcont {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bg-cont {
+    background-color: #e0e2df;
+}
+
+.profilesubheadings {
+    font-size: 18px;
+}
+
+.imagebackgr {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}

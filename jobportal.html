@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87dbca4dd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jobportal.css"/>
+    
+</head>
+
+<body>
+    <nav class="navbar mb-5 navbar-expand-lg navbar-light navbarbc fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="logoIcon">JOB HUNT
+                    <i class="fa-solid fa-briefcase "></i>
+                </h1>
+            </a>
+            <button class="navbar-toggler tog" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon tog"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto">
+                    <a class="nav-link active" id="navItem1" href="#homeSection">
+                        Home
+                        <span class="sr-only ">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#aboutUsSection" id="navItem2">About Us</a>
+                    <a class="nav-link" href="#jbcontainerSection" id="navItem3">Jobs</a>
+                    <a class="nav-link" href="#contactUsSection" id="navItem4">Contact Us</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem5">Follow Us</a>
+                </div>
+
+                <button id="protebut" type="button" class="postbut mr-2" >
+                    Profile
+                </button>
+
+                <button type="button" class="postbut" data-toggle="modal" data-target="#exampleModal">
+                    Post Job
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="homeSection" class="mt-5 mb-5 banner-section-bg-container d-flex justify-content-center flex-column">
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">POST A JOB</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body  modal_container">
+
+
+                    <label for="postCompanyName" class="postTitle">Company Name</label>
+                    <input id="postCompanyName" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postJobRole" class="postTitle">Job Role</label>
+                    <input id="postJobRole" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="imageUrl" class="postTitle">Company Logo</label>
+                    <input id="imageUrl" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="WorkLocation" class="postTitle">Work Location</label>
+                    <input id="WorkLocation" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postStipend" class="postTitle">Stipend</label>
+                    <input id="postStipend" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postOpenings" class="postTitle">Openings</label>
+                    <input id="postOpenings" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postApplyDate" class="postTitle">Apply By</label>
+                    <input id="postApplyDate" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postEducationCriteria" class="postTitle">Education Criteria</label>
+                    <input id="postEducationCriteria" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postYearOfGraduation" class="postTitle">Year Of Graduation</label>
+                    <input id="postYearOfGraduation" class="mt-1 form-control inputStyle" type="text" />
+
+                    <label for="postSkillsRequired">Skills Required</label>
+                    <br />
+                    <textarea id="postSkillsRequired" rows="3" cols="50" class="mt-1 inputStyle"></textarea>
+
+                    <label for="postInterviewProcess">Interview Process</label>
+                    <br />
+                    <textarea id="postInterviewProcess" rows="3" cols="50" class="mt-1 inputStyle"></textarea>
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" id="postJobSubmit" class="postbut" data-dismiss="modal">Submit</button>
+                    <button type="button" class="postbut">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutUsSection" class="mt-5 pt-3 mb-5 container ">
+        <div class="row mt-5 aboutUsBgContainer d-flex flex-row justify-content-center">
+            <div class="col-12 contactusHeadingContainer d-flex flex-column justify-content-center">
+                <h1>About Us</h1>
+            </div>
+            <div class="col-11 p-3 m-2 mt-3 mb-3  whyChooseUsContainer">
+                <h1 class="whyChooseUsHeading">Why Choose Us</h1>
+                <ul>
+                    <li>
+                        <span class="reviewspan">Diverse Opportunities:</span> Discover a wide range of job openings across industries, catering to all career stages.
+                    </li>
+                    <li>
+                        <span class="reviewspan">User-Friendly:</span> Navigate our intuitive platform with ease, saving you time and effort in your job search.
+                    </li>
+                    <li>
+                        <span class="reviewspan">Perfect Matches:</span> Our advanced technology ensures candidates find roles tailored to their skills, while employers meet ideal candidates.
+                    </li>
+                    <li>
+                        <span class="reviewspan">Effortless Applications:</span> Apply seamlessly to desired positions and monitor progress in one central location. Your success starts here.
+                    </li>
+                </ul>
+            </div>
+            <div class='d-flex flex-row justify-content-center'>
+                <div class="col-3 mb-3 mr-2 p-2 reviewContaier">
+                    <div class="starContainer">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star-half-stroke star"></i>
+                    </div>
+                    <h1 class="reviewCommentHe">Amazing Results</h1>
+                    <p class="reviewmatter">
+                        Absolutely amazed by the incredible results! Their dedication and expertise delivered beyond my expectations.
+                    </p>
+                    <div class="d-flex flex-row ">
+                        <img class="w-25" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" />
+                        <div class="w-75 text-center d-flex flex-column justify-content-center">
+                            <p class="reviewerName "> Sai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3 ml-2 mr-2 p-2 reviewContaier">
+                    <div class="starContainer">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star-half-stroke star"></i>
+                    </div>
+                    <h1 class="reviewCommentHe">Amazing Results</h1>
+                    <p class="reviewmatter">
+                        Absolutely amazed by the incredible results! Their dedication and expertise delivered beyond my expectations.
+                    </p>
+                    <div class="d-flex flex-row ">
+                        <img class="w-25" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" />
+                        <div class="w-75 text-center d-flex flex-column justify-content-center">
+                            <p class="reviewerName "> Sai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3 ml-2 p-2 reviewContaier">
+                    <div class="starContainer">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star-half-stroke star"></i>
+                    </div>
+                    <h1 class="reviewCommentHe">Amazing Results</h1>
+                    <p class="reviewmatter">
+                        Absolutely amazed by the incredible results! Their dedication and expertise delivered beyond my expectations.
+                    </p>
+                    <div class="d-flex flex-row ">
+                        <img class="w-25" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" />
+                        <div class="w-75 text-center d-flex flex-column justify-content-center">
+                            <p class="reviewerName "> Sai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="contactsubmit d-block mb-3">See More</button>
+        </div>
+
+    </div>
+    <div id="jbcontainerSection" class="container  alljobcont p-3 pt-5 mt-5 mb-5">
+        <h1 class="allpostjobs">JOB FILTER</h1>
+        <div class="row d-flex flex-row justify-content-center">
+            <div class="col-11 filterContainer d-flex flex-column">
+                <div class="w-100 d-flex flex-row">
+                    <div class="w-50 mr-1">
+                        <label for="filtercompany">Company</label>
+                        <input id="filtercompany" class="form-control" type="text" />
+                    </div>
+
+                    <div class="w-50 ml-1">
+                        <label for="filterlocation">Location</label>
+                        <input id="filterlocation" class="form-control" type="text" />
+                    </div>
+                </div>
+                <div class="w-100 d-flex flex-row mt-3">
+                    <input class="  mr-3 form-control" type="text" placeholder="Estimated Salary" />
+                    <input class=" ml-3 mr-3 form-control" type="text" placeholder="Job Type" />
+                    <input class=" ml-3  form-control" type="text" placeholder="Work Shift" />
+                </div>
+
+                <button id="filterSearchButton" class="mt-3 filterSearchButton">Search Now</button>
+            </div>
+        </div>
+        <h1 class="allpostjobs">ALL JOBS</h1>
+        <div id="alljobcontainer" class="row p-3 d-flex flex-row justify-content-center job_container">
+
+        </div>
+    </div>
+    <div id="contactUsSection" class="container p-0  mt-10  contactUsBgContainer">
+        <div class="row m-0">
+            <div class="col-12 contactusHeadingContainer d-flex flex-column justify-content-center">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="row m-0  d-flex flex-row justify-content-center mt-3 mb-3">
+            <div class="col-3 p-3 cantactCard ml-2 mr-3  mb-2">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="contactIconBackground d-flex flex-column justify-content-center">
+                        <i class="fa-solid fa-phone contactIcon"></i>
+                    </div>
+                </div>
+                <p class="mt-1 mb-0 text-center">6303137290</p>
+                <p class="text-center">9246453632</p>
+            </div>
+            <div class="col-3 p-3 cantactCard ml-4 mr-4  mb-2">
+                <div class="d-flex flex-row justify-content-center">
+                    <diV class="contactIconBackground d-flex flex-column justify-content-center">
+                        <i class="fa-solid fa-envelope contactIcon"></i>
+                    </diV>
+                </div>
+                <p class="mt-1 mb-0 text-center">batch7@gmail.com</p>
+
+            </div>
+            <div class="col-3 p-3 cantactCard ml-3 mr-2  mb-2">
+                <div class="d-flex flex-row justify-content-center">
+                    <diV class="contactIconBackground d-flex flex-column justify-content-center">
+                        <i class="fa-solid fa-location-dot contactIcon"></i>
+                    </diV>
+                </div>
+                <p class="mt-1 mb-0 text-center">Vignan University</p>
+
+            </div>
+        </div>
+        <div class="row m-0  mb-2 p-2 pb-3">
+            <div class="cantactCard w-100 pb-3">
+                <h1 class="drpMsgHd col-12 text-center">Drop Your Message Here</h1>
+                <div class=" col-12 d-flex flex-row justify-content-center">
+                    <div class="col-5 mt-2">
+                        <label>Name</label>
+                        <input class="form-control" type="text" />
+                    </div>
+
+                    <div class="col-5 mt-2">
+                        <label>Number</label>
+                        <input class="form-control" type="text" />
+                    </div>
+                </div>
+
+                <div class=" col-12 d-flex flex-row justify-content-center">
+                    <div class="col-5 mt-2">
+                        <label>Email</label>
+                        <input class="form-control" type="text" />
+                    </div>
+
+                    <div class="col-5 mt-2">
+                        <label>Role</label>
+                        <input class="form-control" type="text" />
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3 mb-3  d-flex flex-row justify-content-center">
+                    <textarea class="msgCont" rows=5 cols="70"></textarea>
+                </div>
+                <button class="contactsubmit mt-3 mb-3 d-block m-auto">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="">
+            <div class="row m-0">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-section pt-5 pb-5">
+        <div class="">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="logoIcon">JOB HUNT
+                        <i class="fa-solid fa-briefcase "></i>
+                    </h1>
+                    <h1 class="footer-section-mail-id">jobhunt@gmail.com</h1>
+                    <p class="footer-section-address">
+                        123 Ayur Vigyan Nagar, New Delhi, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jobportal.js"></script>
+</body>
+
+</html>
